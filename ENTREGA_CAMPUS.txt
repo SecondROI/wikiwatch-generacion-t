@@ -1,9 +1,0 @@
-TP FINAL GENERACIÓN T — WIKIWATCH
-
-Título: WikiWatch — Wiki de Overwatch
-
-Texto para pegar en el espacio de entrega cuando el repositorio esté PUBLICADO y VERIFICADO:
-
-"Adjunto el enlace al repositorio de mi TP final WikiWatch. Incluye una aplicación web con frontend HTML/CSS/JavaScript, backend Node.js/Express y MySQL, un catálogo de héroes, filtros, detalle de habilidades y perks, mapas, modos, favoritos, tests unitarios y documentación del trabajo con IA. Repositorio: [PEGAR AQUÍ EL ENLACE REAL]."
-
-IMPORTANTE: el enlace obligatorio de Campus GT todavía no existe hasta crear y publicar el repositorio en GitHub. Consultar PUBLICAR_EN_GITHUB.md para hacerlo.
