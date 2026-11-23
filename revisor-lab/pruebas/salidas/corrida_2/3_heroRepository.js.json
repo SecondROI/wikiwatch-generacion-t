@@ -1,0 +1,12 @@
+{
+  "archivo": "/mnt/data/WikiWatch_TP_Final/revisor-lab/backend/repositories/heroRepository.js",
+  "modo": "mejorado",
+  "hallazgos": [
+    {
+      "codigo": "INYECCION_SQL",
+      "gravedad": "alta",
+      "explicacion": "Una consulta SQL incluye variables mediante interpolación de cadenas; utilizar parámetros.",
+      "verificable": true
+    }
+  ]
+}

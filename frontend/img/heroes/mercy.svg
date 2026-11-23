@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" role="img" aria-label="Gráfica decorativa Mercy">
+ <defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#3b536e"/><stop offset="1" stop-color="#16243e"/></linearGradient></defs>
+ <rect width="800" height="540" fill="url(#g)"/>
+ <circle cx="630" cy="210" r="245" fill="none" stroke="#a7d6e8" stroke-width="2" opacity=".5"/>
+ <path d="M440 0 L800 0 L800 360 Z" fill="#a7d6e8" opacity=".10"/>
+ <path d="M0 540 L510 540 L215 200 Z" fill="#fff" opacity=".04"/>
+ <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" fill="#a7d6e8" font-family="Arial, sans-serif" font-weight="900" font-size="295" font-style="italic" opacity=".78">M</text>
+ <text x="42" y="52" fill="#f4f7ff" font-family="Arial,sans-serif" font-weight="700" font-size="22" letter-spacing="7">MERCY</text>
+ <text x="42" y="500" fill="#a7d6e8" font-family="Arial,sans-serif" font-weight="700" font-size="19" letter-spacing="8">APOYO</text>
+ </svg>

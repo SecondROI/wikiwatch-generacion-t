@@ -1,0 +1,94 @@
+{
+  "corrida_1": {
+    "revision": "versiones/revisor_antes.md",
+    "aciertos": 3,
+    "total": 5,
+    "filas": [
+      {
+        "archivo": "js/script.js",
+        "esperado": "XSS_INNERHTML",
+        "observado": [
+          "XSS_INNERHTML"
+        ],
+        "acerto": true
+      },
+      {
+        "archivo": "backend/config/database.js",
+        "esperado": "CREDENCIALES_EN_CODIGO",
+        "observado": [
+          "CREDENCIALES_EN_CODIGO"
+        ],
+        "acerto": true
+      },
+      {
+        "archivo": "backend/repositories/heroRepository.js",
+        "esperado": "INYECCION_SQL",
+        "observado": [
+          "INYECCION_SQL"
+        ],
+        "acerto": true
+      },
+      {
+        "archivo": "backend/controllers/heroController.js",
+        "esperado": "SIN_HALLAZGOS",
+        "observado": [
+          "VALIDACION_NO_DEMOSTRADA"
+        ],
+        "acerto": false
+      },
+      {
+        "archivo": "backend/routes/heroRoutes.js",
+        "esperado": "SIN_HALLAZGOS",
+        "observado": [
+          "AUTENTICACION_NO_DEMOSTRADA"
+        ],
+        "acerto": false
+      }
+    ]
+  },
+  "corrida_2": {
+    "revision": "versiones/revisor_despues.md",
+    "aciertos": 5,
+    "total": 5,
+    "filas": [
+      {
+        "archivo": "js/script.js",
+        "esperado": "XSS_INNERHTML",
+        "observado": [
+          "XSS_INNERHTML"
+        ],
+        "acerto": true
+      },
+      {
+        "archivo": "backend/config/database.js",
+        "esperado": "CREDENCIALES_EN_CODIGO",
+        "observado": [
+          "CREDENCIALES_EN_CODIGO"
+        ],
+        "acerto": true
+      },
+      {
+        "archivo": "backend/repositories/heroRepository.js",
+        "esperado": "INYECCION_SQL",
+        "observado": [
+          "INYECCION_SQL"
+        ],
+        "acerto": true
+      },
+      {
+        "archivo": "backend/controllers/heroController.js",
+        "esperado": "SIN_HALLAZGOS",
+        "observado": [],
+        "acerto": true
+      },
+      {
+        "archivo": "backend/routes/heroRoutes.js",
+        "esperado": "SIN_HALLAZGOS",
+        "observado": [],
+        "acerto": true
+      }
+    ]
+  },
+  "tipo_de_prueba": "Revisión determinista local; no es una ejecución del agente con IA en chats nuevos",
+  "cambio_unico": "Se añadió, en la última línea del prompt, la orden de no informar problemas sin evidencia verificable."
+}

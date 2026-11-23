@@ -1,0 +1,10 @@
+{
+  "nota": "Expectativas declaradas ANTES de ejecutar el verificador (fixture de laboratorio, no archivos reales del usuario).",
+  "casos": [
+    {"archivo":"js/script.js","esperado":"XSS_INNERHTML","descripcion":"Riesgo de XSS: interpolación de valores provenientes de API dentro de innerHTML"},
+    {"archivo":"backend/config/database.js","esperado":"CREDENCIALES_EN_CODIGO","descripcion":"Usuario root y contraseña vacía fijados directamente en el código"},
+    {"archivo":"backend/repositories/heroRepository.js","esperado":"INYECCION_SQL","descripcion":"SQL construido con interpolación de nombre en getByName"},
+    {"archivo":"backend/controllers/heroController.js","esperado":"SIN_HALLAZGOS","descripcion":"Manejo adecuado de respuesta y errores para GET público"},
+    {"archivo":"backend/routes/heroRoutes.js","esperado":"SIN_HALLAZGOS","descripcion":"Ruta GET delegada a controller sin efectos secundarios"}
+  ]
+}

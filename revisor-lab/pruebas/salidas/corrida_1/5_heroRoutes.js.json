@@ -1,0 +1,12 @@
+{
+  "archivo": "/mnt/data/WikiWatch_TP_Final/revisor-lab/backend/routes/heroRoutes.js",
+  "modo": "original",
+  "hallazgos": [
+    {
+      "codigo": "AUTENTICACION_NO_DEMOSTRADA",
+      "gravedad": "baja",
+      "explicacion": "La ruta podría necesitar autenticación.",
+      "verificable": false
+    }
+  ]
+}

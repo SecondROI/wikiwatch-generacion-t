@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="WikiWatch: explorá héroes, habilidades, perks, mapas y modos de juego." />
+  <title>WikiWatch | Wiki de Overwatch</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script type="module" src="/js/script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#heroes">Ir al contenido</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio"><span class="brand-symbol" aria-hidden="true">W</span><span>Wiki<span class="accent">Watch</span></span></a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="#heroes">Héroes</a>
+        <a href="#mapas">Mapas</a>
+        <a href="#modos">Modos</a>
+        <a href="#favoritos">Favoritos</a>
+      </nav>
+      <span class="header-label">PROYECTO GENERACIÓN T</span>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero-banner shell" aria-label="Presentación de WikiWatch">
+      <div class="banner-copy">
+        <span class="eyebrow"><span class="status-dot"></span> BASE DE DATOS + API REST</span>
+        <h1>Conocé a tus <em>héroes.</em><br />Dominá cada partida.</h1>
+        <p>Una wiki para descubrir héroes, habilidades, mejoras, mapas y modos de juego del universo Overwatch.</p>
+        <a class="cta" href="#heroes">Explorar héroes <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="banner-art" aria-hidden="true"><span class="orbit one"></span><span class="orbit two"></span><span class="main-mark">W</span><span class="banner-caption">HERO DATABASE / v1.0</span></div>
+    </section>
+
+    <section id="heroes" class="shell section">
+      <div class="section-heading"><div><span class="eyebrow">EXPLORÁ EL ROSTER</span><h2>Catálogo de <span class="accent">héroes</span></h2></div><p>Filtrá por rol, buscá por nombre y entrá a los detalles.</p></div>
+      <div class="toolbar">
+        <label class="search-field"><span class="visually-hidden">Buscar héroes</span><span aria-hidden="true">⌕</span><input id="searchHero" type="search" placeholder="Buscar por nombre…" autocomplete="off" maxlength="60" /></label>
+        <label class="role-field"><span class="visually-hidden">Filtrar por rol</span><select id="filterRole"><option value="">Todos los roles</option><option value="Tanque">Tanque</option><option value="Daño">Daño</option><option value="Apoyo">Apoyo</option></select></label>
+      </div>
+      <p id="heroesStatus" class="status-line" role="status" aria-live="polite">Cargando héroes…</p>
+      <div id="heroesContainer" class="card-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="mapas" class="section section-muted">
+      <div class="shell"><div class="section-heading"><div><span class="eyebrow">CAMPOS DE BATALLA</span><h2>Mapas</h2></div><p>Descubrí las ubicaciones que forman parte del juego.</p></div><div id="mapsContainer" class="card-grid compact-grid"></div></div>
+    </section>
+
+    <section id="modos" class="shell section"><div class="section-heading"><div><span class="eyebrow">FORMAS DE JUGAR</span><h2>Modos de juego</h2></div><p>Entendé el objetivo de cada modalidad.</p></div><div id="gameModesContainer" class="card-grid compact-grid"></div></section>
+
+    <section id="favoritos" class="section section-muted"><div class="shell"><div class="section-heading"><div><span class="eyebrow">TU SELECCIÓN</span><h2>Héroes favoritos <span aria-hidden="true">★</span></h2></div><p>Se guardan en MySQL, no solamente en el navegador.</p></div><div id="favoritesContainer" class="card-grid"></div></div></section>
+  </main>
+
+  <dialog id="heroDialog" class="details-dialog" aria-labelledby="dialogTitle">
+    <div class="dialog-header"><span class="eyebrow">FICHA DEL HÉROE</span><button id="closeDialog" type="button" class="icon-close" aria-label="Cerrar detalle">✕</button></div>
+    <div id="heroDialogContent"></div>
+  </dialog>
+
+  <footer class="site-footer"><div class="shell footer-inner"><strong>Wiki<span class="accent">Watch</span></strong><span>TP final · Generación T · HTML, CSS, JavaScript, Node.js, Express y MySQL</span><span>Proyecto educativo no oficial; Overwatch es propiedad de Blizzard Entertainment.</span></div></footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "archivo": "/mnt/data/WikiWatch_TP_Final/revisor-lab/backend/config/database.js",
+  "modo": "mejorado",
+  "hallazgos": [
+    {
+      "codigo": "CREDENCIALES_EN_CODIGO",
+      "gravedad": "alta",
+      "explicacion": "Acceso root y contraseña vacía definidos dentro del archivo.",
+      "verificable": true
+    }
+  ]
+}

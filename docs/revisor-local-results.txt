@@ -1,0 +1,18 @@
+
+corrida_1 (versiones/revisor_antes.md)
+ACIERTO | js/script.js | Esperado XSS_INNERHTML | Observado XSS_INNERHTML
+ACIERTO | backend/config/database.js | Esperado CREDENCIALES_EN_CODIGO | Observado CREDENCIALES_EN_CODIGO
+ACIERTO | backend/repositories/heroRepository.js | Esperado INYECCION_SQL | Observado INYECCION_SQL
+ERROR   | backend/controllers/heroController.js | Esperado Sin hallazgos | Observado VALIDACION_NO_DEMOSTRADA
+ERROR   | backend/routes/heroRoutes.js | Esperado Sin hallazgos | Observado AUTENTICACION_NO_DEMOSTRADA
+TOTAL corrida_1: 3/5
+
+corrida_2 (versiones/revisor_despues.md)
+ACIERTO | js/script.js | Esperado XSS_INNERHTML | Observado XSS_INNERHTML
+ACIERTO | backend/config/database.js | Esperado CREDENCIALES_EN_CODIGO | Observado CREDENCIALES_EN_CODIGO
+ACIERTO | backend/repositories/heroRepository.js | Esperado INYECCION_SQL | Observado INYECCION_SQL
+ACIERTO | backend/controllers/heroController.js | Esperado Sin hallazgos | Observado Sin hallazgos
+ACIERTO | backend/routes/heroRoutes.js | Esperado Sin hallazgos | Observado Sin hallazgos
+TOTAL corrida_2: 5/5
+
+Cambios de puntaje: 2

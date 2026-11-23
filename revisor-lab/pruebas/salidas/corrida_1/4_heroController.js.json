@@ -1,0 +1,12 @@
+{
+  "archivo": "/mnt/data/WikiWatch_TP_Final/revisor-lab/backend/controllers/heroController.js",
+  "modo": "original",
+  "hallazgos": [
+    {
+      "codigo": "VALIDACION_NO_DEMOSTRADA",
+      "gravedad": "baja",
+      "explicacion": "El Controller podría requerir validaciones adicionales.",
+      "verificable": false
+    }
+  ]
+}

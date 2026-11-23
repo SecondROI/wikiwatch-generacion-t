@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" role="img" aria-label="Gráfica decorativa Genji">
+ <defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#0f504d"/><stop offset="1" stop-color="#16243e"/></linearGradient></defs>
+ <rect width="800" height="540" fill="url(#g)"/>
+ <circle cx="630" cy="210" r="245" fill="none" stroke="#3db2a9" stroke-width="2" opacity=".5"/>
+ <path d="M440 0 L800 0 L800 360 Z" fill="#3db2a9" opacity=".10"/>
+ <path d="M0 540 L510 540 L215 200 Z" fill="#fff" opacity=".04"/>
+ <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" fill="#3db2a9" font-family="Arial, sans-serif" font-weight="900" font-size="295" font-style="italic" opacity=".78">G</text>
+ <text x="42" y="52" fill="#f4f7ff" font-family="Arial,sans-serif" font-weight="700" font-size="22" letter-spacing="7">GENJI</text>
+ <text x="42" y="500" fill="#3db2a9" font-family="Arial,sans-serif" font-weight="700" font-size="19" letter-spacing="8">DAÑO</text>
+ </svg>

@@ -1,0 +1,124 @@
+TAP version 13
+# Subtest: agrega y lista un favorito válido
+ok 1 - agrega y lista un favorito válido
+  ---
+  duration_ms: 1.827762
+  type: 'test'
+  ...
+# Subtest: impide agregar el mismo héroe dos veces
+ok 2 - impide agregar el mismo héroe dos veces
+  ---
+  duration_ms: 0.594312
+  type: 'test'
+  ...
+# Subtest: impide agregar un héroe inexistente
+ok 3 - impide agregar un héroe inexistente
+  ---
+  duration_ms: 0.243922
+  type: 'test'
+  ...
+# Subtest: rechaza un identificador inválido
+ok 4 - rechaza un identificador inválido
+  ---
+  duration_ms: 0.204894
+  type: 'test'
+  ...
+# Subtest: elimina favorito y devuelve 404 al intentar eliminarlo de nuevo
+ok 5 - elimina favorito y devuelve 404 al intentar eliminarlo de nuevo
+  ---
+  duration_ms: 1.181123
+  type: 'test'
+  ...
+# Subtest: reconvierte un error de índice UNIQUE por carrera a 409
+ok 6 - reconvierte un error de índice UNIQUE por carrera a 409
+  ---
+  duration_ms: 0.198375
+  type: 'test'
+  ...
+# Subtest: lista los héroes aplicando filtros validados
+ok 7 - lista los héroes aplicando filtros validados
+  ---
+  duration_ms: 1.408781
+  type: 'test'
+  ...
+# Subtest: obtiene detalle con habilidades y perks (caso correcto)
+ok 8 - obtiene detalle con habilidades y perks (caso correcto)
+  ---
+  duration_ms: 0.49851
+  type: 'test'
+  ...
+# Subtest: rechaza la búsqueda de un héroe inexistente (caso límite)
+ok 9 - rechaza la búsqueda de un héroe inexistente (caso límite)
+  ---
+  duration_ms: 0.53256
+  type: 'test'
+  ...
+# Subtest: rechaza ID malformado (caso inválido)
+ok 10 - rechaza ID malformado (caso inválido)
+  ---
+  duration_ms: 0.173868
+  type: 'test'
+  ...
+# Subtest: positiveId acepta un entero positivo
+ok 11 - positiveId acepta un entero positivo
+  ---
+  duration_ms: 1.026382
+  type: 'test'
+  ...
+# Subtest: positiveId rechaza entradas inválidas, parciales y el límite 0
+ok 12 - positiveId rechaza entradas inválidas, parciales y el límite 0
+  ---
+  duration_ms: 0.790743
+  type: 'test'
+  ...
+# Subtest: normaliza rol sin distinguir mayúsculas y espacios
+ok 13 - normaliza rol sin distinguir mayúsculas y espacios
+  ---
+  duration_ms: 0.510618
+  type: 'test'
+  ...
+# Subtest: rol inexistente se rechaza
+ok 14 - rol inexistente se rechaza
+  ---
+  duration_ms: 0.280145
+  type: 'test'
+  ...
+# Subtest: filtro de nombre demasiado largo se rechaza
+ok 15 - filtro de nombre demasiado largo se rechaza
+  ---
+  duration_ms: 0.358252
+  type: 'test'
+  ...
+# Subtest: caso correcto: dos héroes producen dos tarjetas
+ok 16 - caso correcto: dos héroes producen dos tarjetas
+  ---
+  duration_ms: 0.961206
+  type: 'test'
+  ...
+# Subtest: caso sin resultados: lista vacía muestra el mensaje correcto
+ok 17 - caso sin resultados: lista vacía muestra el mensaje correcto
+  ---
+  duration_ms: 0.20875
+  type: 'test'
+  ...
+# Subtest: caso límite: un solo héroe produce una sola tarjeta
+ok 18 - caso límite: un solo héroe produce una sola tarjeta
+  ---
+  duration_ms: 0.11434
+  type: 'test'
+  ...
+# Subtest: dato inválido: una entrada que no sea array se rechaza
+ok 19 - dato inválido: una entrada que no sea array se rechaza
+  ---
+  duration_ms: 1.076287
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 111.925143

@@ -1,0 +1,12 @@
+{
+  "archivo": "/mnt/data/WikiWatch_TP_Final/revisor-lab/js/script.js",
+  "modo": "mejorado",
+  "hallazgos": [
+    {
+      "codigo": "XSS_INNERHTML",
+      "gravedad": "alta",
+      "explicacion": "Valores de héroes traídos de la API se interpolan sin escapar en innerHTML.",
+      "verificable": true
+    }
+  ]
+}
